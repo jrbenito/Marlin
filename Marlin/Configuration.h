@@ -334,7 +334,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 #define INVERT_Y_DIR true
 #define INVERT_Z_DIR true
 
-#define INVERT_E0_DIR false   // for direct drive extruder v9 set to true, for geared extruder set to false
+#define INVERT_E0_DIR true   // for direct drive extruder v9 set to true, for geared extruder set to false
 #define INVERT_E1_DIR false    // for direct drive extruder v9 set to true, for geared extruder set to false
 #define INVERT_E2_DIR false   // for direct drive extruder v9 set to true, for geared extruder set to false
 
@@ -392,8 +392,8 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 // delta speeds must be the same on xyz
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   {80, 80, 80, 760*1.1}  // default steps per unit for Kossel (GT2, 20 tooth)
 #define DEFAULT_AXIS_STEPS_PER_UNIT   {98.5222, 98.5222, 98.5222, 666.6667}  // Delta Mini (MXL, 16 tooth)
-#define DEFAULT_MAX_FEEDRATE          {18000, 18000, 18000, 25}    // (mm/sec)
-#define DEFAULT_MAX_ACCELERATION      {1000,1000,1000,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
+#define DEFAULT_MAX_FEEDRATE          {18000, 18000, 18000, 250}    // (mm/sec)
+#define DEFAULT_MAX_ACCELERATION      {1000,1000,1000,5000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
 #define DEFAULT_ACCELERATION          3000    // X, Y, Z and E max acceleration in mm/s^2 for printing moves
 #define DEFAULT_RETRACT_ACCELERATION  3000   // X, Y, Z and E max acceleration in mm/s^2 for retracts
